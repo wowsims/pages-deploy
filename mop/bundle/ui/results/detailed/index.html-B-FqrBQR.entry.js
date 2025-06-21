@@ -1,0 +1,1 @@
+import"../../../index-Daay-pNH.chunk.js";import{b4 as s,b5 as d}from"../../../detailed_results-CoJhfCv5.chunk.js";s.get();const a=new URLSearchParams(window.location.search);a.has("cssClass")&&document.body.classList.add(a.get("cssClass"));a.has("isIndividualSim")&&document.body.classList.add("individual-sim"),document.body.classList.add("new-tab"),new d(document.body);
