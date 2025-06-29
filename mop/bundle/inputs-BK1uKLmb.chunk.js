@@ -1,0 +1,1 @@
+import{K as t}from"./preset_utils-CSNilH49.chunk.js";const a=()=>t({fieldName:"startingRunicPower",label:"Starting Runic Power",labelTooltip:"Initial RP at the start of each iteration."});export{a as S};
