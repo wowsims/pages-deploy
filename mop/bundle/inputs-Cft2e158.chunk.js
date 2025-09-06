@@ -1,0 +1,1 @@
+import{J as t}from"./preset_utils-Cz_ySDGC.chunk.js";const e=()=>t({fieldName:"stanceSnapshot",label:"Stance Snapshot",labelTooltip:"Ability that is cast at the same time as stance swap will benefit from the bonus of the stance before the swap."});export{e as S};

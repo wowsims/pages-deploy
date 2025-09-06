@@ -1,0 +1,35 @@
+import { Encounter as EncounterProto } from '/tbc/core/proto/common.js';
+import { PresetEncounter } from '/tbc/core/proto/api.js';
+import { Target } from '/tbc/core/target.js';
+import { Sim } from './sim.js';
+import { EventID, TypedEvent } from './typed_event.js';
+export declare class Encounter {
+    readonly sim: Sim;
+    private duration;
+    private durationVariation;
+    private executeProportion;
+    private useHealth;
+    private targets;
+    readonly targetsChangeEmitter: TypedEvent<void>;
+    readonly durationChangeEmitter: TypedEvent<void>;
+    readonly executeProportionChangeEmitter: TypedEvent<void>;
+    readonly changeEmitter: TypedEvent<void>;
+    constructor(sim: Sim);
+    get primaryTarget(): Target;
+    getDurationVariation(): number;
+    setDurationVariation(eventID: EventID, newDuration: number): void;
+    getDuration(): number;
+    setDuration(eventID: EventID, newDuration: number): void;
+    getExecuteProportion(): number;
+    setExecuteProportion(eventID: EventID, newExecuteProportion: number): void;
+    getUseHealth(): boolean;
+    setUseHealth(eventID: EventID, newUseHealth: boolean): void;
+    getNumTargets(): number;
+    getTargets(): Array<Target>;
+    setTargets(eventID: EventID, newTargets: Array<Target>): void;
+    matchesPreset(preset: PresetEncounter): boolean;
+    applyPreset(eventID: EventID, preset: PresetEncounter): void;
+    toProto(): EncounterProto;
+    fromProto(eventID: EventID, proto: EncounterProto): void;
+    applyDefaults(eventID: EventID): void;
+}
