@@ -1,0 +1,1 @@
+import"../../../index-BgswASio.chunk.js";import{S as s,P as e,a as t,T as n}from"../../../preset_utils-DyUWup16.chunk.js";import{A as o}from"../../../sim-Do5VviQi.chunk.js";import"../../../suggest_reforges_action-8Ti2fX46.chunk.js";import"../../../presets-f1W9fZKq.chunk.js";const r=new s,i=new e(t.AfflictionWarlock,r);r.raid.setPlayer(n.nextEventID(),0,i),new o(document.body,i);

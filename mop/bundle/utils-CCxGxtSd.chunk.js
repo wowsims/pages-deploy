@@ -1,0 +1,1 @@
+import{Ct as e}from"./localization-D9z42pjm.chunk.js";var t=t=>{let n=t.getTalents(),r=0;n.zenSphere?r=2:n.chiWave&&(r=9),t.getRaid()?.setTargetDummies(e.nextEventID(),r)};export{t};

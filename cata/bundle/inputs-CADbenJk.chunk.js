@@ -1,0 +1,1 @@
+import{cc as e,ce as r,O as o}from"./preset_utils-DyUWup16.chunk.js";const a=()=>e({fieldName:"armor",values:[{value:r.NoArmor,tooltip:"No Inner Fire"},{actionId:o.fromSpellId(48168),value:r.InnerFire}]});export{a as A};
