@@ -1,0 +1,1 @@
+import{t as e}from"../localization-BPP3cnRR.chunk.js";e();

@@ -1,0 +1,1 @@
+import{Sa as e,qt as t}from"./localization-BPP3cnRR.chunk.js";import{J as n}from"./preset_utils-C2ExaNVx.chunk.js";var r=()=>n({fieldName:`armor`,values:[{value:e.NoArmor,tooltip:`No Inner Fire`},{actionId:t.fromSpellId(48168),value:e.InnerFire}]});export{r as t};
