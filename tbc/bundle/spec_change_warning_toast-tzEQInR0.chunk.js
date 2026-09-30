@@ -1,0 +1,1 @@
+import{Nt as e}from"./Icon-Cidc4eZr.chunk.js";import{r as t}from"./Toast-CaN3o8cI.chunk.js";var n=e(),r=(e,r,i)=>{let a=e.filter(({condition:e})=>e(r)).map(({message:e})=>e);if(!a.length)return;let o=a.map((e,t)=>(0,n.jsx)(`p`,{children:e},t));t.add({variant:`warning`,body:o,delay:5e3*a.length,...i})};export{r as t};
