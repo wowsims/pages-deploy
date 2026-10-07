@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "homepage": "https://www.wowsims.com",
+  "versions": [
+    {
+      "slug": "forever",
+      "title": "Forever",
+      "acronym": "Forever",
+      "url": "https://www.wowsims.com/forever/",
+      "themeColor": "#4fc3f7",
+      "coverUrl": "https://www.wowsims.com/img/forever_cover.webp",
+      "logoUrl": "https://www.wowsims.com/img/forever_logo.webp",
+      "status": "wip"
+    },
+    {
+      "slug": "mop",
+      "title": "Mists of Pandaria",
+      "acronym": "MoP",
+      "url": "https://www.wowsims.com/mop/",
+      "themeColor": "#00FF98",
+      "coverUrl": "https://www.wowsims.com/mop/assets/img/mop.jpg",
+      "logoUrl": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/bltffc20bbc4caf8c3b/679d43c9bf086a4164b3ec5a/kazoo-logo.png",
+      "status": "live"
+    },
+    {
+      "slug": "cata",
+      "title": "Cataclysm",
+      "acronym": "Cata",
+      "url": "https://www.wowsims.com/cata/",
+      "themeColor": "#f94119",
+      "coverUrl": "https://www.wowsims.com/cata/assets/img/cata.jpg",
+      "logoUrl": "https://warcraft.wiki.gg/images/thumb/7/78/WoW_Cataclysm_Classic_logo.png/1920px-WoW_Cataclysm_Classic_logo.png",
+      "status": "live"
+    },
+    {
+      "slug": "wotlk",
+      "title": "Wrath of the Lich King",
+      "acronym": "WoTLK",
+      "url": "https://www.wowsims.com/wotlk/",
+      "themeColor": "#7fcbd8",
+      "coverUrl": "https://www.wowsims.com/wotlk/assets/img/wotlk.png",
+      "logoUrl": "https://warcraft.wiki.gg/images/thumb/c/c7/WoW_Wrath_Classic_logo.png/1280px-WoW_Wrath_Classic_logo.png",
+      "status": "live"
+    },
+    {
+      "slug": "tbc",
+      "title": "The Burning Crusade",
+      "acronym": "TBC",
+      "url": "https://www.wowsims.com/tbc/",
+      "themeColor": "#a3e268",
+      "coverUrl": "https://www.wowsims.com/tbc/assets/img/tbc.jpg",
+      "logoUrl": "https://warcraft.wiki.gg/images/thumb/e/e2/WoW_BC_Classic_logo.png/1280px-WoW_BC_Classic_logo.png",
+      "status": "live"
+    },
+    {
+      "slug": "classic",
+      "title": "Classic/Vanilla",
+      "acronym": "Classic",
+      "url": "https://www.wowsims.com/classic/",
+      "themeColor": "#f8b700",
+      "coverUrl": "https://www.wowsims.com/classic/assets/img/classic.jpg",
+      "logoUrl": "https://warcraft.wiki.gg/images/thumb/a/af/WoW_Classic_logo.png/2560px-WoW_Classic_logo.png",
+      "status": "live"
+    },
+    {
+      "slug": "sod",
+      "title": "Season of Discovery",
+      "acronym": "SoD",
+      "url": "https://www.wowsims.com/sod/",
+      "themeColor": "#f8b700",
+      "coverUrl": "https://www.wowsims.com/sod/assets/img/sod.png",
+      "logoUrl": "https://warcraft.wiki.gg/images/thumb/3/36/Season_of_Discovery_WoW_Classic.png/1920px-Season_of_Discovery_WoW_Classic.png",
+      "status": "live"
+    }
+  ]
+}
