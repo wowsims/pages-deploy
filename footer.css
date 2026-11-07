@@ -1,0 +1,166 @@
+/*
+ * The footer every WoWSims site shows, served at https://www.wowsims.com/footer.css. Its content comes from
+ * /versions.json (see `VersionsManifest` in src/data/versions.ts). Each site renders this markup and links
+ * this file; the page container and the brand inside `.wowsims-footer-brand` are the site's own.
+ *
+ * <footer class="wowsims-footer">
+ *   <div class="{the site's page container}">
+ *     <div class="wowsims-footer-columns">
+ *       <div class="wowsims-footer-brand">
+ *         {the site's logo and name}
+ *         <ul class="wowsims-footer-socials">
+ *           <li><a>Discord</a></li>
+ *           <li><span class="wowsims-footer-dot" aria-hidden="true">·</span><a>GitHub</a></li>
+ *           ...
+ *         </ul>
+ *       </div>
+ *       <nav class="wowsims-footer-group" aria-labelledby="{heading id}">   one per link group; add
+ *                                                                           wowsims-footer-group-split
+ *                                                                           for a group with `columns: 2`
+ *         <h2 class="wowsims-footer-heading" id="{heading id}">Sims</h2>
+ *         <ul class="wowsims-footer-links">
+ *           <li><a>Forever</a></li>
+ *           <li><span class="wowsims-footer-wip">{a version that is not live}</span></li>
+ *         </ul>
+ *       </nav>
+ *     </div>
+ *     <div class="wowsims-footer-legal">
+ *       <span>© ...</span><span class="wowsims-footer-dot" aria-hidden="true">·</span><span>{disclaimer}</span>
+ *     </div>
+ *   </div>
+ * </footer>
+ *
+ * A site may set --wowsims-footer-background and --wowsims-footer-accent on `.wowsims-footer` to theme it.
+ * Renaming a class or changing this structure breaks every site, so only add to it.
+ */
+
+.wowsims-footer {
+	--wowsims-footer-background: rgb(21 23 30 / 0.9);
+	--wowsims-footer-accent: #f8b700;
+	--wowsims-footer-border: rgb(255 255 255 / 0.08);
+
+	border-top: 1px solid var(--wowsims-footer-border);
+	background: var(--wowsims-footer-background);
+	font-size: 0.875rem;
+	line-height: 1.5;
+	color: rgb(255 255 255 / 0.65);
+}
+
+.wowsims-footer a {
+	color: rgb(255 255 255 / 0.8);
+	text-decoration: none;
+}
+
+.wowsims-footer a:hover,
+.wowsims-footer a:focus-visible {
+	color: var(--wowsims-footer-accent);
+}
+
+.wowsims-footer ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/* Two columns on phones, with the brand and a split group each on a row of their own */
+.wowsims-footer-columns {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.5rem;
+	padding-block: 3rem;
+}
+
+.wowsims-footer-brand {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+	grid-column: 1 / -1;
+}
+
+.wowsims-footer-socials {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.wowsims-footer-socials li {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.wowsims-footer-dot {
+	color: rgb(255 255 255 / 0.35);
+}
+
+.wowsims-footer-heading {
+	margin: 0 0 1rem;
+	font-size: 0.875rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #fff;
+}
+
+.wowsims-footer-links {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+/* A group whose links take two columns */
+.wowsims-footer-group-split {
+	grid-column: 1 / -1;
+}
+
+.wowsims-footer-group-split .wowsims-footer-links {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: 1.5rem;
+}
+
+.wowsims-footer-wip {
+	color: rgb(255 255 255 / 0.45);
+}
+
+.wowsims-footer-legal {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 0.5rem;
+	padding-block: 1rem;
+	border-top: 1px solid var(--wowsims-footer-border);
+	font-size: 0.8rem;
+	text-align: center;
+	color: rgb(255 255 255 / 0.55);
+}
+
+@media (max-width: 575.98px) {
+	.wowsims-footer-legal .wowsims-footer-dot {
+		display: none;
+	}
+}
+
+/* The brand on its own row, then the three link groups */
+@media (min-width: 768px) {
+	.wowsims-footer-columns {
+		grid-template-columns: 1fr 1fr 1.5fr;
+	}
+
+	.wowsims-footer-group-split {
+		grid-column: auto;
+	}
+}
+
+/* Brand, then the link groups, all on one row: the brand takes twice a link group's share, and a link
+   group never narrows below its links */
+@media (min-width: 1200px) {
+	.wowsims-footer-columns {
+		grid-template-columns: minmax(0, 2fr) repeat(3, minmax(max-content, 1fr));
+		gap: 3rem;
+	}
+
+	.wowsims-footer-brand {
+		grid-column: auto;
+	}
+}
