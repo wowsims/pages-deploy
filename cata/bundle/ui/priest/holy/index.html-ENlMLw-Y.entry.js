@@ -1,0 +1,1 @@
+import"../../../index-BgswASio.chunk.js";import{S as s,P as n,a as t,T as e}from"../../../preset_utils-DMMnQwIW.chunk.js";import{H as i}from"../../../sim-CUwnpmnz.chunk.js";import"../../../inputs-DdfNcu7R.chunk.js";const o=new s,r=new n(t.HolyPriest,o);o.raid.setPlayer(e.nextEventID(),0,r),new i(document.body,r);
