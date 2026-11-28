@@ -1,0 +1,1 @@
+import"../../../index-BgswASio.chunk.js";import{S as s,P as e,a as t,T as n}from"../../../preset_utils-DMMnQwIW.chunk.js";import{D as r}from"../../../sim-B3QQEIGv.chunk.js";import"../../../suggest_reforges_action-BG723SO-.chunk.js";import"../../../presets-gRE-axBT.chunk.js";const o=new s,c=new e(t.DestructionWarlock,o);o.raid.setPlayer(n.nextEventID(),0,c),new r(document.body,c);
